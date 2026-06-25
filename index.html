@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
+<meta name="description" content="نجار القصر السعودي بالرياض - فك وتركيب أثاث، فك وتركيب ايكيا، تركيب مطابخ وستائر، فتح أبواب مغلقة، تركيب أقفال إلكترونية. اتصل: 05764930406"/>
+<meta name="keywords" content="نجار بالرياض, فك وتركيب ايكيا, تركيب مطابخ الرياض, فتح ابواب مغلقة, تركيب اقفال الكترونية, نجار اثاث الرياض"/>
+<meta name="robots" content="index,follow"/>
+<title>نجار القصر السعودي بالرياض | 05764930406</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --olive:   #5c6b3f;
+  --olive-d: #3f4a2b;
+  --olive-l: #8aa05a;
+  --tan:     #c9a36a;
+  --tan-d:   #a67c42;
+  --tan-l:   #e3c79a;
+  --tan-p:   #f6ead4;
+  --dark:    #1d1c16;
+  --dark2:   #25241c;
+  --white:   #ffffff;
+  --off:     #f8f6f0;
+  --line:    #e6e0d2;
+  --muted:   #6a6555;
+  --text:    #1b1a13;
+  --sha:     0 8px 40px rgba(92,107,63,.2);
+  --sht:     0 8px 40px rgba(201,163,106,.25);
+}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}
+body{font-family:'Tajawal',sans-serif;background:var(--white);color:var(--text);direction:rtl;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--off)}
+::-webkit-scrollbar-thumb{background:var(--olive);border-radius:3px}
+
+/* ===== HEADER ===== */
+#hdr{
+  position:fixed;top:0;left:0;right:0;z-index:900;height:68px;padding:0 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(29,28,22,.93);backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(201,163,106,.2);transition:height .35s,background .35s;
+}
+#hdr.scrolled{height:58px;background:rgba(29,28,22,.98)}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-ic{
+  width:40px;height:40px;border-radius:10px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--tan),var(--tan-d));
+  display:flex;align-items:center;justify-content:center;color:var(--dark);font-size:1.1rem;
+  box-shadow:0 0 18px rgba(201,163,106,.45);
+}
+.logo-tx .l1{display:block;font-family:'Cairo',sans-serif;font-weight:900;font-size:.98rem;color:#fff;line-height:1.1}
+.logo-tx .l1 span{color:var(--tan-l)}
+.logo-tx .l2{display:block;font-size:.68rem;color:rgba(255,255,255,.6);margin-top:1px}
+nav{display:flex;align-items:center;gap:1.4rem}
+nav a{font-size:.86rem;font-weight:600;color:rgba(255,255,255,.75);transition:color .25s;white-space:nowrap;position:relative}
+nav a::after{content:'';position:absolute;bottom:-3px;right:0;width:0;height:1.5px;background:var(--tan-l);transition:width .3s}
+nav a:hover{color:var(--tan-l)}
+nav a:hover::after{width:100%}
+.hdr-cta{
+  background:linear-gradient(135deg,var(--tan),var(--tan-d));color:var(--dark)!important;font-weight:800!important;
+  padding:.45rem 1.3rem;border-radius:50px;box-shadow:0 0 16px rgba(201,163,106,.4);
+  display:inline-flex;align-items:center;gap:6px;animation:ctapulse 3s infinite;
+}
+@keyframes ctapulse{0%,100%{box-shadow:0 0 16px rgba(201,163,106,.4)}50%{box-shadow:0 0 28px rgba(201,163,106,.65)}}
+.hdr-cta::after{display:none!important}
+.hdr-cta:hover{transform:translateY(-2px)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.burger span{display:block;width:24px;height:2px;background:var(--tan-l);border-radius:2px}
+
+/* ===== HERO ===== */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{
+  position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(20,19,14,.92) 0%,rgba(63,74,43,.74) 55%,rgba(20,19,14,.94) 100%),
+    url('1.jpg') center/cover no-repeat;
+  will-change:transform;
+}
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.particle{position:absolute;width:2px;height:2px;background:var(--tan-l);border-radius:50%;animation:floaty linear infinite;opacity:0}
+@keyframes floaty{0%{opacity:0;transform:translateY(100vh) scale(0)}10%{opacity:.8}90%{opacity:.8}100%{opacity:0;transform:translateY(-15vh) scale(1.4)}}
+.hero-inner{position:relative;z-index:2;text-align:center;padding:8rem 1.5rem 4rem;max-width:870px;width:100%}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(201,163,106,.16);border:1px solid rgba(201,163,106,.4);
+  color:var(--tan-l);font-size:.83rem;font-weight:700;padding:.4rem 1.1rem;border-radius:50px;margin-bottom:1.4rem;
+  backdrop-filter:blur(8px);animation:fadedown .8s ease both;
+}
+.hero-h1{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(1.75rem,5vw,3.3rem);color:#fff;line-height:1.22;margin-bottom:1rem;animation:fadeup 1s .15s ease both}
+.hero-h1 .glow{
+  background:linear-gradient(90deg,var(--tan),var(--tan-l),var(--tan));background-size:200%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3s infinite linear;
+}
+@keyframes shimmer{0%{background-position:0%}100%{background-position:200%}}
+.hero-sub{font-size:1.06rem;color:rgba(255,255,255,.72);line-height:1.85;margin-bottom:2.4rem;animation:fadeup 1s .3s ease both}
+.hero-btns{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;animation:fadeup 1s .45s ease both}
+.btn-a{
+  display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--tan),var(--tan-d));
+  color:var(--dark);font-family:'Cairo',sans-serif;font-weight:800;font-size:1rem;padding:.8rem 1.7rem;border-radius:50px;
+  box-shadow:0 6px 28px rgba(201,163,106,.5);transition:transform .3s;position:relative;overflow:hidden;border:none;cursor:pointer;
+}
+.btn-a::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transition:left .5s}
+.btn-a:hover{transform:translateY(-3px)}.btn-a:hover::before{left:100%}
+.btn-b{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.28);
+  color:#fff;font-family:'Cairo',sans-serif;font-weight:700;font-size:1rem;padding:.8rem 1.7rem;border-radius:50px;
+  backdrop-filter:blur(8px);transition:.3s;
+}
+.btn-b:hover{border-color:var(--tan-l);color:var(--tan-l);transform:translateY(-3px)}
+.hero-stats{display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;margin-top:2.8rem;animation:fadeup 1s .6s ease both}
+.stat .n{display:block;font-family:'Cairo',sans-serif;font-size:1.85rem;font-weight:900;color:var(--tan-l);line-height:1}
+.stat .lb{font-size:.76rem;color:rgba(255,255,255,.6);margin-top:3px}
+.scroll-hint{position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:5px;color:rgba(255,255,255,.45);font-size:.72rem;animation:bounce 2s infinite;z-index:2}
+.scroll-hint i{color:var(--tan);font-size:1rem}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(7px)}}
+@keyframes fadedown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:none}}
+@keyframes fadeup{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* ===== SECTION COMMON ===== */
+section{padding:5.5rem 0;width:100%;overflow:hidden}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.5rem;width:100%}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--olive);margin-bottom:.65rem}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:28px;height:1.5px;background:linear-gradient(90deg,var(--tan),transparent)}
+.sec-title{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(1.55rem,3.5vw,2.35rem);color:var(--text);line-height:1.3;margin-bottom:.9rem}
+.sec-title .hi{color:var(--tan-d)}
+.sec-title .ol{color:var(--olive)}
+.sec-sub{font-size:.98rem;color:var(--muted);line-height:1.9;max-width:620px}
+
+.rv{opacity:0;transform:translateY(36px);transition:opacity .75s ease,transform .75s ease}
+.rv.on{opacity:1;transform:none}
+.rv-l{opacity:0;transform:translateX(36px);transition:opacity .75s ease,transform .75s ease}
+.rv-l.on{opacity:1;transform:none}
+.rv-r{opacity:0;transform:translateX(-36px);transition:opacity .75s ease,transform .75s ease}
+.rv-r.on{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}.d4{transition-delay:.34s}.d5{transition-delay:.42s}.d6{transition-delay:.5s}
+
+/* ===== ABOUT ===== */
+#about{background:var(--off)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center}
+.aimg-wrap{position:relative}
+.aimg-wrap img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;box-shadow:0 20px 55px rgba(0,0,0,.18);transition:transform .5s}
+.aimg-wrap:hover img{transform:scale(1.02)}
+.aimg-badge{
+  position:absolute;bottom:-1.2rem;left:1rem;background:linear-gradient(135deg,var(--tan),var(--tan-d));
+  color:var(--dark);padding:.9rem 1.3rem;border-radius:14px;box-shadow:var(--sht);text-align:center;font-weight:800;z-index:2;
+}
+.aimg-badge .bn{display:block;font-size:1.85rem;font-weight:900;line-height:1}
+.aimg-badge .bs{font-size:.73rem}
+.atxt p{font-size:.96rem;line-height:2;color:var(--muted);margin-bottom:.9rem}
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1.5rem}
+.feat{display:flex;align-items:center;gap:9px;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:.7rem .95rem;font-size:.85rem;font-weight:700;color:var(--text);transition:.3s}
+.feat:hover{border-color:var(--tan);box-shadow:var(--sht);transform:translateY(-2px)}
+.feat-ic{width:34px;height:34px;flex-shrink:0;border-radius:8px;background:linear-gradient(135deg,var(--tan-p),var(--tan-l));display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--dark)}
+
+/* ===== SERVICES ===== */
+#services{background:var(--white)}
+.sv-intro{text-align:center;margin-bottom:3.5rem}
+.sv-intro .sec-sub{margin:0 auto}
+.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
+.sc{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.4s}
+.sc:hover{transform:translateY(-7px);box-shadow:0 20px 55px rgba(201,163,106,.22);border-color:var(--tan)}
+.sc-img{position:relative;aspect-ratio:4/3;overflow:hidden;flex-shrink:0}
+.sc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.sc:hover .sc-img img{transform:scale(1.07)}
+.sc-img-ov{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 35%,rgba(20,19,14,.86) 100%)}
+.sc-badge{
+  position:absolute;bottom:.9rem;right:.9rem;width:46px;height:46px;border-radius:11px;
+  background:linear-gradient(135deg,var(--tan),var(--tan-d));display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;color:var(--dark);box-shadow:0 4px 14px rgba(0,0,0,.3);
+}
+.sc-body{padding:1.35rem}
+.sc-body h3{font-family:'Cairo',sans-serif;font-weight:800;font-size:1.04rem;color:var(--text);margin-bottom:.5rem}
+.sc-body p{font-size:.855rem;line-height:1.85;color:var(--muted)}
+.sc-link{display:inline-flex;align-items:center;gap:5px;color:var(--olive);font-weight:700;font-size:.83rem;margin-top:.9rem;transition:.3s}
+.sc-link:hover{gap:9px;color:var(--tan-d)}
+.sv-break{grid-column:1/-1;height:260px;border-radius:18px;overflow:hidden;position:relative;margin:.3rem 0}
+.sv-break img{width:100%;height:100%;object-fit:cover}
+.sv-break-ov{position:absolute;inset:0;background:linear-gradient(120deg,rgba(20,19,14,.78),rgba(63,74,43,.55));display:flex;align-items:center;justify-content:center;padding:1.5rem}
+.sv-break-tx{text-align:center;color:#fff}
+.sv-break-tx h3{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.5rem;margin-bottom:.4rem}
+.sv-break-tx p{font-size:.9rem;opacity:.85}
+
+/* ===== WHY ===== */
+#why{background:linear-gradient(150deg,var(--dark) 0%,var(--dark2) 100%);position:relative;overflow:hidden}
+#why::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 18% 55%,rgba(201,163,106,.08) 0%,transparent 48%),radial-gradient(circle at 82% 20%,rgba(92,107,63,.2) 0%,transparent 45%);
+}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+.why-txt .sec-title{color:#fff}
+.why-txt .sec-sub{color:rgba(255,255,255,.62)}
+.why-txt p{color:rgba(255,255,255,.65);line-height:2;font-size:.94rem;margin-bottom:.9rem}
+.why-pts{display:flex;flex-direction:column;gap:.9rem;margin-top:1.8rem}
+.wpt{display:flex;gap:.95rem;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(201,163,106,.16);border-radius:13px;padding:1rem 1.2rem;transition:.3s}
+.wpt:hover{background:rgba(201,163,106,.09);border-color:rgba(201,163,106,.35);transform:translateX(-4px)}
+.wpt-ic{width:42px;height:42px;flex-shrink:0;border-radius:9px;background:linear-gradient(135deg,var(--tan),var(--tan-d));display:flex;align-items:center;justify-content:center;font-size:1.05rem;color:var(--dark);box-shadow:0 4px 14px rgba(201,163,106,.35)}
+.wpt-tx h4{color:var(--tan-l);font-weight:700;font-size:.93rem;margin-bottom:.25rem}
+.wpt-tx p{color:rgba(255,255,255,.57);font-size:.83rem;line-height:1.7;margin:0}
+.why-vis{position:relative}
+.why-vis img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.why-lbl{
+  position:absolute;top:-1.2rem;right:.5rem;background:linear-gradient(135deg,var(--tan),var(--tan-l));
+  color:var(--dark);padding:.85rem 1.15rem;border-radius:12px;font-weight:800;font-size:.85rem;box-shadow:var(--sht);text-align:center;
+}
+.why-lbl span{display:block;font-size:1.05rem;font-weight:900;color:var(--tan-d);margin-bottom:2px}
+
+/* ===== STEPS ===== */
+#steps{position:relative;background:var(--off);overflow:hidden}
+.steps-bg{position:absolute;inset:0;background:url('4.jpg') center/cover no-repeat;opacity:.05}
+.steps-inner{position:relative;z-index:1}
+.steps-hd{text-align:center;margin-bottom:3.5rem}
+.timeline{display:flex;flex-direction:column;max-width:680px;margin:0 auto;position:relative}
+.timeline::before{content:'';position:absolute;top:0;right:26px;width:2px;height:100%;background:linear-gradient(to bottom,var(--tan),transparent)}
+.tl-item{display:flex;gap:1.6rem;align-items:flex-start;padding:1.3rem 0}
+.tl-n{
+  width:52px;height:52px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--tan),var(--tan-d));
+  display:flex;align-items:center;justify-content:center;font-family:'Cairo',sans-serif;font-size:1.2rem;font-weight:900;
+  color:var(--dark);box-shadow:var(--sht);position:relative;z-index:1;
+}
+.tl-b{flex:1;min-width:0;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.35rem;box-shadow:0 4px 18px rgba(0,0,0,.06);transition:.3s}
+.tl-b:hover{border-color:var(--tan);box-shadow:var(--sht);transform:translateX(-4px)}
+.tl-ic{font-size:1.05rem;color:var(--olive);margin-bottom:.3rem}
+.tl-b h3{font-family:'Cairo',sans-serif;font-weight:800;font-size:1rem;margin-bottom:.3rem;color:var(--text)}
+.tl-b p{font-size:.84rem;color:var(--muted);line-height:1.8}
+
+/* ===== GALLERY ===== */
+#gallery{background:var(--white)}
+.gl-hd{text-align:center;margin-bottom:2.8rem}
+.gl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.gl-card{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;cursor:pointer}
+.gl-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gl-card:hover img{transform:scale(1.08)}
+.gl-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,19,14,.92) 0%,rgba(20,19,14,.18) 55%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.1rem;opacity:0;transition:opacity .35s}
+.gl-card:hover .gl-ov{opacity:1}
+.gl-ov h4{color:var(--tan-l);font-family:'Cairo',sans-serif;font-weight:800;font-size:.87rem;margin-bottom:.25rem}
+.gl-ov p{color:rgba(255,255,255,.72);font-size:.75rem}
+.gl-card:first-child{grid-column:span 2;grid-row:span 2}
+
+/* ===== CONTACT ===== */
+#contact{position:relative;overflow:hidden}
+.ct-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,19,14,.93) 0%,rgba(63,74,43,.87) 100%),url('5.jpg') center/cover no-repeat}
+.ct-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.ct-info .sec-title{color:#fff}
+.ct-info p{color:rgba(255,255,255,.68);line-height:2;margin-bottom:1.8rem;font-size:.94rem}
+.ct-methods{display:flex;flex-direction:column;gap:.9rem}
+.ctm{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.06);border:1px solid rgba(201,163,106,.2);border-radius:13px;padding:.95rem 1.15rem;transition:.3s}
+.ctm:hover{background:rgba(201,163,106,.12);border-color:var(--tan);transform:translateX(-4px)}
+.ctm-ic{width:42px;height:42px;flex-shrink:0;border-radius:9px;background:linear-gradient(135deg,var(--tan),var(--tan-d));display:flex;align-items:center;justify-content:center;font-size:1.05rem;color:var(--dark)}
+.ctm .lb{color:var(--tan-l);font-size:.73rem;font-weight:700;margin-bottom:1px}
+.ctm .vl{color:#fff;font-weight:700;font-size:.95rem}
+.ct-form{background:rgba(255,255,255,.06);border:1px solid rgba(201,163,106,.2);border-radius:22px;padding:2.1rem;backdrop-filter:blur(18px)}
+.ct-form h3{font-family:'Cairo',sans-serif;color:#fff;font-size:1.2rem;font-weight:800;margin-bottom:1.4rem;display:flex;align-items:center;gap:8px}
+.ct-form h3 i{color:var(--tan-l)}
+.fg{margin-bottom:1.1rem}
+.fg label{display:block;color:var(--tan-l);font-size:.83rem;font-weight:700;margin-bottom:5px}
+.fg input,.fg textarea,.fg select{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(201,163,106,.25);border-radius:9px;padding:.68rem .95rem;color:#fff;font-family:'Tajawal',sans-serif;font-size:.9rem;outline:none;direction:rtl;transition:.3s}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.32)}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--tan);background:rgba(201,163,106,.08)}
+.fg textarea{resize:vertical;min-height:88px}
+.fg select option{background:#1d1c16;color:#fff}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.btn-submit{
+  width:100%;background:linear-gradient(135deg,var(--tan),var(--tan-d));color:var(--dark);font-family:'Cairo',sans-serif;font-weight:800;
+  font-size:.98rem;padding:.82rem;border:none;border-radius:11px;cursor:pointer;box-shadow:var(--sht);transition:.3s;
+  display:flex;align-items:center;justify-content:center;gap:7px;
+}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(201,163,106,.55)}
+
+/* ===== FLOATING BUTTONS ===== */
+#floats{position:fixed;bottom:1.8rem;left:1.8rem;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:12px}
+.flt{display:flex;flex-direction:column;align-items:center;gap:5px;position:relative}
+.flt-tip{background:var(--dark);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:7px;white-space:nowrap;opacity:0;transform:translateY(4px);transition:.3s;pointer-events:none}
+.flt:hover .flt-tip{opacity:1;transform:none}
+.wa-f{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#25d366,#128c7e);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(37,211,102,.42);animation:wap 2.5s infinite;transition:transform .3s}
+.wa-f:hover{transform:scale(1.1)}
+.wa-f i{font-size:1.6rem;color:#fff}
+@keyframes wap{0%,100%{box-shadow:0 6px 22px rgba(37,211,102,.42)}50%{box-shadow:0 6px 36px rgba(37,211,102,.7),0 0 0 9px rgba(37,211,102,.1)}}
+.call-f{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--tan),var(--tan-d));display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(201,163,106,.5);animation:callp 2.5s infinite 1.25s;transition:transform .3s}
+.call-f:hover{transform:scale(1.1)}
+.call-f i{font-size:1.4rem;color:var(--dark)}
+@keyframes callp{0%,100%{box-shadow:0 6px 22px rgba(201,163,106,.5)}50%{box-shadow:0 6px 36px rgba(201,163,106,.8),0 0 0 9px rgba(201,163,106,.12)}}
+
+/* ===== FOOTER ===== */
+footer{background:var(--dark);padding:3rem 0 1.5rem;border-top:1px solid rgba(201,163,106,.18)}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2rem}
+.ft-brand p{color:rgba(255,255,255,.5);font-size:.84rem;line-height:1.9;margin-top:1rem}
+.ft-col h4{color:var(--tan-l);font-family:'Cairo',sans-serif;font-weight:800;font-size:.9rem;margin-bottom:.9rem}
+.ft-col ul{list-style:none}
+.ft-col ul li{margin-bottom:.45rem}
+.ft-col ul li a{color:rgba(255,255,255,.5);font-size:.83rem;display:flex;align-items:center;gap:5px;transition:.3s}
+.ft-col ul li a i{color:var(--tan);font-size:.65rem}
+.ft-col ul li a:hover{color:var(--tan-l)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.07);padding-top:1.4rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.ft-bot p{color:rgba(255,255,255,.3);font-size:.77rem}
+.ft-bot span{color:var(--tan)}
+
+/* ===== CREDIT ===== */
+#credit{background:#15140f;border-top:1px solid rgba(201,163,106,.12);padding:.65rem 1.5rem;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;text-align:center;font-size:.76rem;color:rgba(255,255,255,.28);font-family:'Tajawal',sans-serif}
+#credit a{display:inline-flex;align-items:center;gap:4px;color:var(--tan);font-weight:700;opacity:.85;transition:.3s}
+#credit a:hover{opacity:1;color:var(--tan-l)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .about-grid,.why-grid,.ct-inner{grid-template-columns:1fr;gap:3rem}
+  .sv-grid{grid-template-columns:repeat(2,1fr)}
+  .gl-grid{grid-template-columns:repeat(3,1fr)}
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .ft-brand{grid-column:1/-1}
+  .aimg-badge{bottom:-1rem;left:.5rem}
+  .why-lbl{top:-.8rem;right:.3rem}
+}
+@media(max-width:900px){
+  nav{display:none;position:fixed;top:68px;inset-inline:0;background:rgba(29,28,22,.98);flex-direction:column;padding:1.8rem 2rem;gap:.9rem;border-top:1px solid rgba(201,163,106,.2);width:100%}
+  nav.open{display:flex}
+  nav a{font-size:.98rem}
+  .burger{display:flex}
+}
+@media(max-width:680px){
+  section{padding:3.5rem 0}
+  .wrap{padding:0 1.1rem}
+  .sv-grid,.gl-grid{grid-template-columns:1fr 1fr}
+  .gl-card:first-child{grid-column:span 2;grid-row:span 1}
+  .ft-grid{grid-template-columns:1fr}
+  .ft-bot{flex-direction:column;text-align:center}
+  .feat-grid{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .hero-stats{gap:1rem}
+  .stat .n{font-size:1.5rem}
+  #floats{bottom:1rem;left:1rem;gap:9px}
+  .wa-f,.call-f{width:50px;height:50px}
+  #hdr{padding:0 1rem}
+  .logo-tx .l2{display:none}
+  .sv-break{height:200px}
+  .sv-break-tx h3{font-size:1.15rem}
+}
+@media(max-width:480px){
+  .hero-btns{flex-direction:column;align-items:stretch}
+  .hero-btns a{width:100%;justify-content:center}
+  .sv-grid,.gl-grid{grid-template-columns:1fr}
+  .gl-card:first-child{grid-column:span 1}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="hdr">
+  <a href="#hero" class="logo">
+    <div class="logo-ic"><i class="fa-solid fa-hammer"></i></div>
+    <div class="logo-tx">
+      <span class="l1">نجار <span>القصر السعودي</span></span>
+      <span class="l2">نجار بالرياض</span>
+    </div>
+  </a>
+  <nav id="nav">
+    <a href="#about">من نحن</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#why">لماذا نحن</a>
+    <a href="#steps">خطوات العمل</a>
+    <a href="#gallery">أعمالنا</a>
+    <a href="#contact" class="hdr-cta"><i class="fa-solid fa-phone"></i> اتصل الآن</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+</header>
+
+<!-- ===== FLOATING BTNS ===== -->
+<div id="floats">
+  <div class="flt">
+    <span class="flt-tip">تواصل عبر واتساب</span>
+    <a href="https://wa.me/9665764930406" target="_blank" rel="noopener" class="wa-f"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <div class="flt">
+    <span class="flt-tip">اتصل الآن: 05764930406</span>
+    <a href="tel:05764930406" class="call-f"><i class="fa-solid fa-phone"></i></a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg" id="pbg"></div>
+  <div class="particles" id="particles"></div>
+  <div class="hero-inner">
+    <div class="hero-badge"><i class="fa-solid fa-certificate"></i> نجار معتمد بخبرة طويلة بالرياض</div>
+    <h1 class="hero-h1">نجار القصر السعودي — <span class="glow">فك وتركيب الأثاث</span><br/>بدقة وحرفية عالية</h1>
+    <p class="hero-sub">
+      فك وتركيب أثاث، تجميع ايكيا، تركيب مطابخ وستائر<br/>
+      فتح الأبواب المغلقة وتركيب الأقفال الإلكترونية بأسرع وقت
+    </p>
+    <div class="hero-btns">
+      <a href="tel:05764930406" class="btn-a"><i class="fa-solid fa-phone"></i> اتصل: 05764930406</a>
+      <a href="#services" class="btn-b"><i class="fa-solid fa-list"></i> تعرف على خدماتنا</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="n">+7000</span><span class="lb">عمل مُنفَّذ</span></div>
+      <div class="stat"><span class="n">+11</span><span class="lb">سنة خبرة</span></div>
+      <div class="stat"><span class="n">100%</span><span class="lb">ضمان الجودة</span></div>
+      <div class="stat"><span class="n">24/7</span><span class="lb">خدمة سريعة</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><i class="fa-solid fa-chevron-down"></i><span>اكتشف أكثر</span></div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="aimg-wrap rv-r">
+        <img src="2.jpg" alt="نجار القصر السعودي بالرياض"/>
+        <div class="aimg-badge"><span class="bn">11+</span><span class="bs">سنة من الحرفية</span></div>
+      </div>
+      <div class="atxt rv-l d2">
+        <div class="eyebrow">من نحن</div>
+        <h2 class="sec-title">نجار القصر السعودي — <span class="hi">حرفية تدوم وثقة تستمر</span></h2>
+        <p>يُعدّ نجار القصر السعودي من المؤسسات المتخصصة في خدمات النجارة المنزلية بمدينة الرياض، حيث نقدم خدمات شاملة تبدأ من فك وتركيب الأثاث بجميع أنواعه، وصولاً إلى تجميع قطع ايكيا وتركيب المطابخ والستائر بدقة متناهية.</p>
+        <p>يضم فريقنا نجارين متخصصين بخبرة عميقة في التعامل مع جميع أنواع الأثاث والماركات المحلية والعالمية، مع التزام تام بمعايير الجودة في كل عمل، لضمان نتيجة نهائية متينة وأنيقة تدوم لسنوات طويلة.</p>
+        <p>نتخصص أيضاً في فتح الأبواب المغلقة بدون مفاتيح وتركيب الأقفال الإلكترونية الحديثة، بخبرة فنية تضمن حلاً سريعاً وآمناً لأي حالة طارئة، مع سرعة استجابة عالية في جميع أحياء الرياض.</p>
+        <div class="feat-grid">
+          <div class="feat rv d1"><div class="feat-ic"><i class="fa-solid fa-screwdriver-wrench"></i></div>تركيب دقيق</div>
+          <div class="feat rv d2"><div class="feat-ic"><i class="fa-solid fa-shield-halved"></i></div>ضمان الجودة</div>
+          <div class="feat rv d3"><div class="feat-ic"><i class="fa-solid fa-clock"></i></div>استجابة سريعة</div>
+          <div class="feat rv d4"><div class="feat-ic"><i class="fa-solid fa-coins"></i></div>أسعار منصفة</div>
+          <div class="feat rv d5"><div class="feat-ic"><i class="fa-solid fa-user-gear"></i></div>نجارون محترفون</div>
+          <div class="feat rv d6"><div class="feat-ic"><i class="fa-solid fa-key"></i></div>فتح أقفال احترافي</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="wrap">
+    <div class="sv-intro rv">
+      <div class="eyebrow">خدماتنا</div>
+      <h2 class="sec-title">خدمات <span class="hi">النجارة</span> الشاملة</h2>
+      <p class="sec-sub">باقة متكاملة من خدمات النجارة بالرياض بأعلى معايير الجودة والحرفية لتلبية جميع احتياجاتكم.</p>
+    </div>
+    <div class="sv-grid">
+
+      <div class="sc rv d1">
+        <div class="sc-img"><img src="1.jpg" alt="فك وتركيب الأثاث"/><div class="sc-img-ov"></div><div class="sc-badge"><i class="fa-solid fa-screwdriver-wrench"></i></div></div>
+        <div class="sc-body">
+          <h3>فك وتركيب الأثاث</h3>
+          <p>فك وتركيب جميع أنواع الأثاث بدقة متناهية، سواء غرف النوم أو الصالات أو المكاتب، مع إعادة التركيب في المكان الجديد كما كان تمامًا، والتعامل مع جميع الماركات المحلية والعالمية باحترافية.</p>
+          <a href="tel:05764930406" class="sc-link">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="sc rv d2">
+        <div class="sc-img"><img src="3.jpg" alt="فك وتركيب ايكيا"/><div class="sc-img-ov"></div><div class="sc-badge"><i class="fa-solid fa-cube"></i></div></div>
+        <div class="sc-body">
+          <h3>فك وتركيب أثاث ايكيا</h3>
+          <p>تجميع وتركيب جميع منتجات ايكيا بدقة عالية وسرعة في التنفيذ، مع اتباع التعليمات الفنية الدقيقة لكل قطعة لضمان ثباتها ومتانتها، وتوفير وقتكم وجهدكم في التجميع اليدوي المعقد.</p>
+          <a href="tel:05764930406" class="sc-link">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="sc rv d3">
+        <div class="sc-img"><img src="2.jpg" alt="تركيب مطابخ"/><div class="sc-img-ov"></div><div class="sc-badge"><i class="fa-solid fa-kitchen-set"></i></div></div>
+        <div class="sc-body">
+          <h3>تركيب المطابخ</h3>
+          <p>تركيب المطابخ بجميع أنواعها وخاماتها بدقة هندسية عالية، مع ضبط الخزائن والأدراج والأسطح بشكل متقن، وتوصيل الأجهزة المدمجة بطريقة آمنة ومنظمة تضمن استخدامًا سلسًا لسنوات طويلة.</p>
+          <a href="tel:05764930406" class="sc-link">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="sv-break rv">
+        <img src="3.jpg" alt="تركيب ستائر بالرياض"/>
+        <div class="sv-break-ov">
+          <div class="sv-break-tx">
+            <h3>تركيب الستائر بدقة وأناقة لكل غرفة</h3>
+            <p>تركيب احترافي يضمن توازناً مثالياً وحركة سلسة للستائر</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc rv d1">
+        <div class="sc-img"><img src="4.jpg" alt="تركيب ستائر"/><div class="sc-img-ov"></div><div class="sc-badge"><i class="fa-solid fa-blinds"></i></div></div>
+        <div class="sc-body">
+          <h3>تركيب الستائر</h3>
+          <p>تركيب جميع أنواع الستائر العادية والرول والإلكترونية بمقاسات دقيقة، مع ضبط السكك والحركة بشكل متوازن، وتوصيلات مخفية أنيقة تضيف لمسة جمالية متكاملة لكل غرفة في منزلكم.</p>
+          <a href="tel:05764930406" class="sc-link">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="sc rv d2">
+        <div class="sc-img"><img src="5.jpg" alt="فتح أبواب مغلقة"/><div class="sc-img-ov"></div><div class="sc-badge"><i class="fa-solid fa-door-open"></i></div></div>
+        <div class="sc-body">
+          <h3>فتح الأبواب المغلقة</h3>
+          <p>فتح الأبواب المغلقة بدون مفاتيح بسرعة وكفاءة دون إلحاق أي ضرر بالباب أو القفل، خدمة طارئة متاحة على مدار الساعة لمساعدتكم في أي وقت تحتاجون إليها بأقل وقت وتكلفة ممكنة.</p>
+          <a href="tel:05764930406" class="sc-link">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="sc rv d3">
+        <div class="sc-img"><img src="1.jpg" alt="تركيب أقفال إلكترونية"/><div class="sc-img-ov"></div><div class="sc-badge"><i class="fa-solid fa-lock"></i></div></div>
+        <div class="sc-body">
+          <h3>تركيب الأقفال الإلكترونية</h3>
+          <p>تركيب أحدث أنواع الأقفال الإلكترونية الذكية (بصمة، رمز، بطاقة) بضبط دقيق وتجربة استخدام سهلة وآمنة، نوفر حماية متطورة لمنزلكم مع شرح كامل لطريقة الاستخدام والإعدادات.</p>
+          <a href="tel:05764930406" class="sc-link">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY ===== -->
+<section id="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-txt">
+        <div class="eyebrow" style="color:var(--tan-l)">لماذا نحن</div>
+        <h2 class="sec-title rv" style="color:#fff">اختر <span style="color:var(--tan-l);-webkit-text-fill-color:var(--tan-l)">الأفضل</span> لنجارة منزلك</h2>
+        <p class="rv d1">في سوق مليء بالخيارات، يبقى نجار القصر السعودي الخيار الأول الموثوق لآلاف العملاء في الرياض. لا نقدم مجرد خدمة نجارة — نقدم حرفية تدوم وجودة تستحق الثقة.</p>
+        <div class="why-pts">
+          <div class="wpt rv d1"><div class="wpt-ic"><i class="fa-solid fa-bolt"></i></div><div class="wpt-tx"><h4>سرعة في التنفيذ مع الدقة</h4><p>ننجز أعمال التركيب والتجميع في أقل وقت ممكن دون التضحية بجودة العمل.</p></div></div>
+          <div class="wpt rv d2"><div class="wpt-ic"><i class="fa-solid fa-user-gear"></i></div><div class="wpt-tx"><h4>نجارون محترفون ومدربون</h4><p>فريقنا يمتلك خبرة طويلة في جميع مجالات التركيب والتجميع والفتح والإصلاح.</p></div></div>
+          <div class="wpt rv d3"><div class="wpt-ic"><i class="fa-solid fa-coins"></i></div><div class="wpt-tx"><h4>أسعار شفافة وتنافسية</h4><p>أسعار واضحة وشاملة بدون تكاليف خفية تناسب جميع الميزانيات والاحتياجات.</p></div></div>
+          <div class="wpt rv d4"><div class="wpt-ic"><i class="fa-solid fa-tools"></i></div><div class="wpt-tx"><h4>عدد ومعدات حديثة</h4><p>نستخدم أدوات ومعدات متطورة تضمن دقة التركيب ومتانة النتيجة النهائية.</p></div></div>
+          <div class="wpt rv d5"><div class="wpt-ic"><i class="fa-solid fa-shield-halved"></i></div><div class="wpt-tx"><h4>ضمان شامل على كل عمل</h4><p>نلتزم بضمان جودة العمل المُنجز، مما يمنحكم راحة بال تامة وثقة كاملة بخدماتنا.</p></div></div>
+        </div>
+      </div>
+      <div class="why-vis rv-l d2">
+        <img src="4.jpg" alt="لماذا نجار القصر السعودي"/>
+        <div class="why-lbl"><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>تقييم عملائنا</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section id="steps">
+  <div class="steps-bg"></div>
+  <div class="wrap steps-inner">
+    <div class="steps-hd">
+      <div class="eyebrow rv">خطوات العمل</div>
+      <h2 class="sec-title rv d1">كيف نعمل؟ <span class="hi">4 خطوات بسيطة</span></h2>
+      <p class="sec-sub rv d2" style="margin:0 auto;text-align:center">من أول اتصال حتى إنجاز العمل المطلوب بأعلى جودة واحترافية</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item rv d1"><div class="tl-n">١</div><div class="tl-b"><div class="tl-ic"><i class="fa-solid fa-phone-volume"></i></div><h3>التواصل والاستفسار</h3><p>اتصل بنا أو تواصل عبر واتساب على 05764930406 وسيرد فريقنا فورًا ويقدم أفضل عرض سعر مناسب.</p></div></div>
+      <div class="tl-item rv d2"><div class="tl-n">٢</div><div class="tl-b"><div class="tl-ic"><i class="fa-solid fa-magnifying-glass"></i></div><h3>المعاينة وتحديد المطلوب</h3><p>معاينة سريعة لتحديد طبيعة العمل المطلوب وأفضل الحلول الفنية المناسبة لحالتكم.</p></div></div>
+      <div class="tl-item rv d3"><div class="tl-n">٣</div><div class="tl-b"><div class="tl-ic"><i class="fa-solid fa-hammer"></i></div><h3>التنفيذ الفني الدقيق</h3><p>تنفيذ العمل المتفق عليه بأعلى معايير الجودة والدقة، مع متابعة كل تفصيل حتى الإنجاز الكامل.</p></div></div>
+      <div class="tl-item rv d4"><div class="tl-n">٤</div><div class="tl-b"><div class="tl-ic"><i class="fa-solid fa-circle-check"></i></div><h3>الفحص النهائي والتسليم</h3><p>فحص شامل للتأكد من ثبات ومتانة العمل، ثم تسليم رسمي مع ضمان مكتوب يحفظ حقوقكم.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="gl-hd">
+      <div class="eyebrow rv">أعمالنا</div>
+      <h2 class="sec-title rv d1">معرض <span class="hi">أعمالنا المتميزة</span></h2>
+      <p class="sec-sub rv d2" style="margin:0 auto;text-align:center">نماذج من مشاريع النجارة التي نفذناها بنجاح لعملائنا الكرام في مختلف أحياء الرياض</p>
+    </div>
+    <div class="gl-grid">
+      <div class="gl-card rv d1"><img src="1.jpg" alt="تركيب أثاث غرفة نوم"/><div class="gl-ov"><h4><i class="fa-solid fa-bed"></i> تركيب أثاث غرفة نوم كاملة</h4><p>تركيب دقيق لكل قطعة بحرفية عالية</p></div></div>
+      <div class="gl-card rv d2"><img src="2.jpg" alt="تركيب مطبخ"/><div class="gl-ov"><h4><i class="fa-solid fa-kitchen-set"></i> تركيب مطبخ متكامل</h4><p>تركيب خزائن وأسطح بدقة هندسية</p></div></div>
+      <div class="gl-card rv d3"><img src="3.jpg" alt="تجميع ايكيا"/><div class="gl-ov"><h4><i class="fa-solid fa-cube"></i> تجميع أثاث ايكيا</h4><p>تركيب سريع ودقيق لكل القطع</p></div></div>
+      <div class="gl-card rv d4"><img src="4.jpg" alt="تركيب ستائر"/><div class="gl-ov"><h4><i class="fa-solid fa-blinds"></i> تركيب ستائر بمقاس دقيق</h4><p>توازن مثالي وحركة سلسة</p></div></div>
+      <div class="gl-card rv d5"><img src="5.jpg" alt="تركيب قفل إلكتروني"/><div class="gl-ov"><h4><i class="fa-solid fa-lock"></i> تركيب قفل إلكتروني ذكي</h4><p>حماية متطورة وسهولة استخدام</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="ct-bg"></div>
+  <div class="wrap">
+    <div class="ct-inner">
+      <div class="ct-info">
+        <div class="eyebrow" style="color:var(--tan-l)">تواصل معنا</div>
+        <h2 class="sec-title rv" style="color:#fff">نحن هنا<br/><span style="color:var(--tan-l)">على مدار الساعة</span></h2>
+        <p class="rv d1">لا تتردد في التواصل معنا في أي وقت، فريقنا المتخصص جاهز للرد الفوري على استفساراتكم وتقديم أفضل عروض الأسعار.</p>
+        <div class="ct-methods">
+          <a href="tel:05764930406" class="ctm rv d2"><div class="ctm-ic"><i class="fa-solid fa-phone"></i></div><div><div class="lb">اتصل بنا مباشرة</div><div class="vl">05764930406</div></div></a>
+          <a href="https://wa.me/9665764930406" target="_blank" rel="noopener" class="ctm rv d3"><div class="ctm-ic"><i class="fa-brands fa-whatsapp"></i></div><div><div class="lb">واتساب — رد فوري</div><div class="vl">05764930406</div></div></a>
+          <div class="ctm rv d4" style="cursor:default"><div class="ctm-ic"><i class="fa-solid fa-location-dot"></i></div><div><div class="lb">نخدم جميع أحياء</div><div class="vl">الرياض والضواحي</div></div></div>
+          <div class="ctm rv d5" style="cursor:default"><div class="ctm-ic"><i class="fa-solid fa-clock"></i></div><div><div class="lb">أوقات الخدمة</div><div class="vl">24 ساعة / 7 أيام</div></div></div>
+        </div>
+      </div>
+      <div class="ct-form rv d3">
+        <h3><i class="fa-solid fa-clipboard-list"></i> احصل على عرض سعر مجاني</h3>
+        <div class="frow"><div class="fg"><label>الاسم الكريم</label><input type="text" placeholder="اسمك الكريم"/></div><div class="fg"><label>رقم الجوال</label><input type="tel" placeholder="05xxxxxxxx"/></div></div>
+        <div class="fg"><label>نوع الخدمة المطلوبة</label>
+          <select><option value="">اختر الخدمة</option><option>فك وتركيب أثاث</option><option>فك وتركيب ايكيا</option><option>تركيب مطبخ</option><option>تركيب ستائر</option><option>فتح باب مغلق</option><option>تركيب قفل إلكتروني</option></select>
+        </div>
+        <div class="frow"><div class="fg"><label>الحي</label><input type="text" placeholder="الحي الحالي"/></div><div class="fg"><label>تفاصيل العمل</label><input type="text" placeholder="مثال: 3 غرف نوم"/></div></div>
+        <div class="fg"><label>ملاحظات إضافية</label><textarea placeholder="أي تفاصيل إضافية تودّ إخبارنا بها..."></textarea></div>
+        <button class="btn-submit" onclick="submitForm(this)"><i class="fa-solid fa-circle-check"></i> أرسل طلبك الآن — مجانًا</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="logo" style="display:inline-flex">
+          <div class="logo-ic"><i class="fa-solid fa-hammer"></i></div>
+          <div class="logo-tx" style="margin-right:11px"><span class="l1" style="font-size:1.05rem">نجار <span>القصر السعودي</span></span><span class="l2">نجار بالرياض</span></div>
+        </div>
+        <p>نجار القصر السعودي — خبرة تزيد عن 11 عامًا في تقديم أفضل خدمات النجارة وتركيب الأثاث داخل الرياض وضواحيها. نفخر بثقة آلاف العملاء الكرام ونسعى دائمًا لتجاوز توقعاتهم.</p>
+        <a href="tel:05764930406" class="btn-a" style="margin-top:1rem;display:inline-flex"><i class="fa-solid fa-phone"></i> 05764930406</a>
+      </div>
+      <div class="ft-col"><h4>خدماتنا</h4><ul>
+        <li><a href="#services"><i class="fa-solid fa-chevron-left"></i> فك وتركيب أثاث</a></li>
+        <li><a href="#services"><i class="fa-solid fa-chevron-left"></i> تركيب ايكيا</a></li>
+        <li><a href="#services"><i class="fa-solid fa-chevron-left"></i> تركيب مطابخ</a></li>
+        <li><a href="#services"><i class="fa-solid fa-chevron-left"></i> تركيب ستائر</a></li>
+        <li><a href="#services"><i class="fa-solid fa-chevron-left"></i> فتح أبواب مغلقة</a></li>
+        <li><a href="#services"><i class="fa-solid fa-chevron-left"></i> أقفال إلكترونية</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>روابط سريعة</h4><ul>
+        <li><a href="#about"><i class="fa-solid fa-chevron-left"></i> من نحن</a></li>
+        <li><a href="#why"><i class="fa-solid fa-chevron-left"></i> لماذا نحن</a></li>
+        <li><a href="#steps"><i class="fa-solid fa-chevron-left"></i> خطوات العمل</a></li>
+        <li><a href="#gallery"><i class="fa-solid fa-chevron-left"></i> أعمالنا</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-chevron-left"></i> تواصل معنا</a></li>
+        <li><a href="tel:05764930406"><i class="fa-solid fa-chevron-left"></i> اتصل الآن</a></li>
+      </ul></div>
+    </div>
+    <div class="ft-bot">
+      <p>© 2024 <span>نجار القصر السعودي</span> — جميع الحقوق محفوظة</p>
+      <p>معايير <span>SEO</span> عالية | نجار بالرياض | فك وتركيب ايكيا</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== CREDIT ===== -->
+<div id="credit">
+  <span>تصميم وتسويق رقمي بواسطة</span>
+  <a href="https://gulf-marketing.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> تسويق الخليج — gulf-marketing.com</a>
+</div>
+
+<script>
+const pc=document.getElementById('particles');
+for(let i=0;i<28;i++){
+  const p=document.createElement('div');
+  p.className='particle';
+  p.style.cssText=`left:${Math.random()*100}%;width:${Math.random()*3+1}px;height:${Math.random()*3+1}px;animation-duration:${Math.random()*10+8}s;animation-delay:${Math.random()*10}s;opacity:${Math.random()*.6}`;
+  pc.appendChild(p);
+}
+const pbg=document.getElementById('pbg');
+const mm=window.matchMedia('(min-width:681px)');
+if(mm.matches){
+  window.addEventListener('scroll',()=>{pbg.style.transform=`translateY(${window.scrollY*.28}px)`},{passive:true});
+}
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',window.scrollY>75),{passive:true});
+const burger=document.getElementById('burger');
+const nav=document.getElementById('nav');
+burger.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const allRv=document.querySelectorAll('.rv,.rv-l,.rv-r');
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -36px 0px'});
+allRv.forEach(el=>obs.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}});
+});
+function submitForm(btn){
+  const orig=btn.innerHTML;
+  btn.innerHTML='<i class="fa-solid fa-circle-check"></i> تم الإرسال! سنتواصل معك قريبًا';
+  btn.style.background='linear-gradient(135deg,#22c55e,#16a34a)';
+  setTimeout(()=>{btn.innerHTML=orig;btn.style.background=''},4500);
+}
+</script>
+</body>
+</html>
